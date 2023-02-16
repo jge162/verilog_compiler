@@ -1,6 +1,6 @@
 ## GitHub Verilog-Compiler:  
 
-![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jge162/Action-workflows/python_check.yml)
+![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jge162/verilog-compiler/verilof-compiler.yml)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jge162/verilog-compiler)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jge162/Action-workflows)
 
