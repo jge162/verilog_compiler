@@ -1,0 +1,43 @@
+name: Javascript Action error checker
+
+on:
+  schedule:
+  - cron: '0 0 1 * *'
+  # action will run once a month on 1st day at 12:00 am 
+  
+  #- cron: '0 0 * * 6' 
+  # action will run once a week on Saturday at 12:00 am 
+  workflow_dispatch:
+
+  # push:
+    # branches:
+      # - main
+  # pull_request:
+  #  branches:
+  #    - main
+
+jobs:
+  Javascript-analyze:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install jshint
+      run: npm install -g jshint
+
+    - name: Script Error Results Here!
+      run: |
+        echo "Build application script outputs Here!"
+        python3 -c "
+        scripts = ['./dist/javascript_check.py']
+        for script in scripts:
+            with open(script, 'r') as file:
+                exec(file.read())
+        "

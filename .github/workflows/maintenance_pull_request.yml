@@ -1,0 +1,28 @@
+name: Keep main branch up_to_date
+
+on:
+  schedule:
+  - cron: '0 12 * * *'
+  # This will run once a day, to keep main branch up to date. 
+  #- cron: '0 */8 * * *'
+  # action will run everyday at 12 am and 12 pm
+  workflow_dispatch:
+
+jobs:
+  Update_Main_Branch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create report file
+        run: date +%s > report.txt
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          token: ${{ secrets.WORKFLOW_SECRET }}
+          commit-message: Keeping main branch up to date!
+          title: '[Updating] Main branch to keep up to date!'
+          body: >
+            This PR is auto-generated to keep main branch up to date! 
+            [create-pull-request](https://github.com/peter-evans/create-pull-request).
+          labels: Update_main_branch, maintenance_pull, github-actions
+          
