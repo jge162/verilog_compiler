@@ -25,9 +25,9 @@ jobs:
 
     - run: |
         echo "Set executable permission on script file"
-        chmod +x build/sh
+        chmod +x script/sh
         chmod +x ./ClockDivider.v
 
     - run: |
         echo "Run, Build Application using script"
-        ./build/sh
+        ./script/sh
