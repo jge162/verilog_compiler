@@ -1,5 +1,5 @@
-name: Python Action
-description: Quickly run your Python code and verify it is error-free
+name: Verilog Compiler
+description: Quickly run your Verilog code and verify it is error-free
 author: Jeremy Escobar
 branding:
   icon: activity
