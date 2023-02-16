@@ -48,6 +48,26 @@ jobs:
         ./script/sh
 ```
 
+## Script file you need to run your .v files:
+
+```yaml
+#!/bin/bash
+
+# Define the name of the project
+PROJECT_NAME="verilog_test_case"
+
+# Define the list of Verilog files to be included in the project
+VERILOG_FILES="verilog_test_case.v"
+
+# Compile the Verilog files into an executable
+iverilog -o $PROJECT_NAME $VERILOG_FILES
+
+# Run the simulation for scripts
+vvp $PROJECT_NAME
+
+# Print a message indicating that the script has finished running
+echo "Success! Script has finished running."
+```
        
 ## Issues and/or bugs, please create an issue to help me squash them!:
 
