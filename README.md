@@ -1,74 +1,58 @@
 ## GitHub Verilog-Compiler:  
 
 ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jge162/Action-workflows/python_check.yml)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jge162/Action-workflows)
-[![Python Action](https://github.com/jge162/Action-workflows/actions/workflows/python_check.yml/badge.svg)](https://github.com/jge162/Action-workflows/actions/workflows/python_check.yml)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jge162/verilog-compiler)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jge162/Action-workflows)
-![GitHub](https://img.shields.io/github/license/jge162/Action-workflows?color=purple)
 
 <img src="https://user-images.githubusercontent.com/31228460/218295872-1865b4ba-9c3c-4a28-bac8-0fd11c7c37f6.png" width="79%">
 
-## Purpose of this repository:
+## Purpose of Verilog Compiler:
   
-A template to create simple to use GitHub actions on any repo for initial setup.
+To be able to quickly load your .v files to GitHub and run and test them. It will notify you
+of errors in your code just like a compiler should. It requires to files to run. First you
+need to create a directoy script/sh to run a script. Then you chose which .v files you want to run.
 
-## Example action to run a `python.py` file to verify no errors in code:
+## veriflog_compiler.v 
 
-
-   
-## Up to you to decide on your triggers, I used `push` and `pull_request`
-
-a good one to use also is `workflow_dispacth` to manually run the action.
- 
 ```yaml
-name: Run Python file
+name: Verilog Build and Analysis
+
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-```         
-  
-## Install required `dependencies.`
+  schedule:
+  - cron: '0 0,12 * * *' 
+    # action will run everyday at 12 am and 12 pm
+  workflow_dispatch:
 
-This way your can run, Python file.
-
-```yaml  
 jobs:
   build-and-analyze:
     runs-on: ubuntu-latest
 
     steps:
     - name: Python Action
-      uses: jge162/Action-workflows@v1.0.1
+      uses: jge162/Action-workflows@1.1.1
+
 
     - run: |
-        echo "Install required dependencies" 
+        echo "Install required dependencies"
         sudo apt-get update
-        sudo apt-get install python3
-```         
-    
-## Lastly use a for loop to run multipe instances.
+        sudo apt-get install iverilog
+        sudo apt-get install verilator
 
-This way you can run one or multple python scripts.
+    - run: |
+        echo "Set executable permission on script file"
+        chmod +x script/sh
+        chmod +x ./verilog_test_case.v
+        
+    - run: |
+        echo "Run, Build Application using script"
+        ./script/sh
+```
 
-```yaml
-     - run: |
-        echo "Run, Build Application using scripts"
-        python3 -c "
-        scripts = ['./script.py', './script2.py'] 
-        for script in scripts:
-            with open(script, 'r') as file:
-                exec(file.read())
-        "
-```  
        
 ## Issues and/or bugs, please create an issue to help me squash them!:
 
-Please report [issues](https://github.com/jge162/Action-workflows/issues/new) here for discussion and resolution please.
+Please report [issues](https://github.com/jge162/verilog_compiler/issues) here for discussion and resolution please.
 
 ## License info:
   
-jge162/Action-workflows is licensed under the [GNU General Public License v3.0](https://github.com/jge162/Action-workflows/blob/main/LICENSE)
+jge162/verilog_compiler is licensed under the [GNU General Public License v3.0](https://github.com/jge162/verilog_compiler/blob/main/LICENSE)
