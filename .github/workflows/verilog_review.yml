@@ -21,8 +21,8 @@ jobs:
     - run: |
         echo "Set executable permission on script file"
         chmod +x script/sh
-        chmod +x ./ClockDivider.v
-
+        chmod +x ./verilog_test_case.v
+        
     - run: |
         echo "Run, Build Application using script"
         ./script/sh
