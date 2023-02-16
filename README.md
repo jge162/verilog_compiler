@@ -29,9 +29,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Python Action
-      uses: jge162/Action-workflows@1.1.1
-
+    - name: Verilog Compiler
+      uses: jge162/verilog_compiler@1.0.0
 
     - run: |
         echo "Install required dependencies"
