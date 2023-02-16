@@ -12,7 +12,7 @@ jobs:
   Update_Main_Branch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Create report file
         run: date +%s > report.txt
       - name: Create Pull Request
