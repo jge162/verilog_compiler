@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Define the name of the project
-PROJECT_NAME="TopModule"
+PROJECT_NAME="verilog_test_case"
 
 # Define the list of Verilog files to be included in the project
-VERILOG_FILES="TopModule.v ClockDivider.v ./build/testerFile.v"
+VERILOG_FILES="verilog_test_case.v"
 
 # Compile the Verilog files into an executable
 iverilog -o $PROJECT_NAME $VERILOG_FILES
@@ -13,4 +13,4 @@ iverilog -o $PROJECT_NAME $VERILOG_FILES
 vvp $PROJECT_NAME
 
 # Print a message indicating that the script has finished running
-echo "Success! Script has finished running. No syntax errors found."
+echo "Success! Script has finished running."
