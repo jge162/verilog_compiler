@@ -1,6 +1,9 @@
 name: Verilog Build and Analysis
 
 on:
+  schedule:
+  - cron: '0 0,12 * * *' 
+    # action will run everyday at 12 am and 12 pm
   workflow_dispatch:
 
 jobs:
