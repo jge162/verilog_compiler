@@ -1,7 +1,7 @@
 ## GitHub Verilog-Compiler:  
 
-![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jge162/verilog-compiler/verilof-compiler.yml)
-![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jge162/verilog-compiler)
+![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jge162/verilog_compiler/verilog_compiler.yml)
+![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jge162/verilog_compiler)
 [![Verilog Build and Analysis](https://github.com/jge162/verilog_compiler/actions/workflows/verilog_compiler.yml/badge.svg)](https://github.com/jge162/verilog_compiler/actions/workflows/verilog_compiler.yml)
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/jge162/Action-workflows)
 
