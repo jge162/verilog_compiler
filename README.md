@@ -73,6 +73,10 @@ echo "Success! Script has finished running."
 
 Please report [issues](https://github.com/jge162/verilog_compiler/issues) here for discussion and resolution please.
 
+## Screenshot of verilog compiled in Action console.
+
+<img width="600" alt="Screenshot 2023-02-16 at 9 12 52 AM" src="https://user-images.githubusercontent.com/31228460/219443530-798d4f53-e62c-49c0-a3f3-d303b52f7df1.png">
+
 ## License info:
   
 jge162/verilog_compiler is licensed under the [GNU General Public License v3.0](https://github.com/jge162/verilog_compiler/blob/main/LICENSE)
