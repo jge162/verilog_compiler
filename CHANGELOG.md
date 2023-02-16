@@ -1,5 +1,6 @@
+## 1.0.0 - 2023-02-16
 
-
+Pull request number for the release is: [#2](https://github.com/jge162/verilog_compiler/pull/2)
 
 ## Changelog To keep all Pull requests that coincided with releases.
 
