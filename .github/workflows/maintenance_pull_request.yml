@@ -2,10 +2,7 @@ name: Keep main branch up_to_date
 
 on:
   schedule:
-  - cron: '0 12 * * 3,0'
-  # This will run at 12 pm on the third and seventh day of the week (Wed and Sun)
-  #- cron: '0 */8 * * *'
-  # action will run everyday at 12 am and 12 pm
+    - cron: '0 12 * * 0' # Run every Sunday at 12 PM UTC
   workflow_dispatch:
 
 jobs:
