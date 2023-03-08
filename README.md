@@ -70,9 +70,6 @@ echo "Success! Script has finished running."
 ```
 
 ## Screenshot of verilog compiled in Action console.
-
-<img width="1000" alt="Screenshot 2023-02-16 at 9 12 52 AM" src="https://user-images.githubusercontent.com/31228460/219443530-798d4f53-e62c-49c0-a3f3-d303b52f7df1.png">
-
 ![image](https://user-images.githubusercontent.com/31228460/223683341-ea4b8e65-9a26-496d-819c-c4911b1ee2ab.png)
 
 
