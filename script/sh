@@ -10,12 +10,7 @@ VERILOG_FILES="verilog_test_case.v"
 iverilog -o $PROJECT_NAME $VERILOG_FILES
 
 # Run the simulation for scripts
-# vvp $PROJECT_NAME
-# Run the simulation for scripts
-VVP_OUTPUT=$(vvp $PROJECT_NAME)
-COUNT=$(echo "$VVP_OUTPUT" | grep "count =" | tail -1 | awk '{print $3}')
-SCLK=$(echo "$VVP_OUTPUT" | grep "sclk =" | tail -1 | awk '{print $3}')
-echo "count = $COUNT, sclk = $SCLK"
+vvp $PROJECT_NAME
 
 # Print a message indicating that the script has finished running
 echo "Success! Script has finished running."
