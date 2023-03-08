@@ -11,6 +11,12 @@ iverilog -o $PROJECT_NAME $VERILOG_FILES
 
 # Run the simulation for scripts
 # vvp $PROJECT_NAME
+# Check if the executable exists and has non-zero size
+if [[ ! -s $PROJECT_NAME ]]; then
+  echo "Error: Executable file does not exist or has zero size"
+  exit 1
+fi
+
 # Run the simulation for scripts
 vvp -l $PROJECT_NAME | while read line; do
   if [[ $line == *count* ]]; then
