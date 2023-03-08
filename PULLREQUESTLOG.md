@@ -1,5 +1,9 @@
 ### Changelog for automerge and Dependabot
 
+## refs/pull/16/merge - 2023-03-08
+
+Pull request number for auto-merge is: [#16](https://github.com/jge162/verilog_compiler/pull/16)
+
 ## refs/pull/14/merge - 2023-03-08
 
 Pull request number for auto-merge is: [#14](https://github.com/jge162/verilog_compiler/pull/14)
