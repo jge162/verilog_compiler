@@ -12,7 +12,7 @@ module clock_divide(
       sclk <= 1'b0;
     end else begin
       if (count == 32'd5000000) begin
-        count <= 32'd0;
+        count <= 32'd1;
         sclk <= ~sclk;
       end else begin
         count <= count + 1;
