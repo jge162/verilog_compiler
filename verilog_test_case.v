@@ -3,7 +3,7 @@ module clock_divide(
   input reset,
   output reg sclk
 );
-
+//5000000
   reg [31:0] count = 0;
   
   always @(posedge clk or negedge reset) begin
@@ -11,7 +11,7 @@ module clock_divide(
       count <= 32'd0;
       sclk <= 1'b0;
     end else begin
-      if (count == 32'd5000000) begin
+      if (count == 32'd1000) begin
         count <= 32'd1;
         sclk <= ~sclk;
       end else begin
