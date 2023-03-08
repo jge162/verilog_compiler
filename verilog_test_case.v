@@ -35,9 +35,9 @@ module tb_clock_divide;
   
   initial begin
     clk = 0;
-    reset = 1;
+    reset = 0;
     
-    #10 reset = 0;
+    #10 reset = 1;
     
     #100 $finish;
   end
