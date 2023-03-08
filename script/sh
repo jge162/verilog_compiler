@@ -10,7 +10,13 @@ VERILOG_FILES="verilog_test_case.v"
 iverilog -o $PROJECT_NAME $VERILOG_FILES
 
 # Run the simulation for scripts
-vvp $PROJECT_NAME
+# vvp $PROJECT_NAME
+# Run the simulation for scripts
+vvp -l $PROJECT_NAME | while read line; do
+  if [[ $line == *count* ]]; then
+    echo $line
+  fi
+done
 
 # Print a message indicating that the script has finished running
 echo "Success! Script has finished running."
