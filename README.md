@@ -3,7 +3,7 @@
 ![GitHub Workflow Status (with branch)](https://img.shields.io/github/actions/workflow/status/jge162/verilog_compiler/verilog_compiler.yml)
 ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/jge162/verilog_compiler)
 [![Verilog Build and Analysis](https://github.com/jge162/verilog_compiler/actions/workflows/verilog_compiler.yml/badge.svg)](https://github.com/jge162/verilog_compiler/actions/workflows/verilog_compiler.yml)
-![GitHub package.json version](https://img.shields.io/github/package-json/v/jge162/Action-workflows)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/jge162/verilog_compiler)
 
 <img src="https://user-images.githubusercontent.com/31228460/218295872-1865b4ba-9c3c-4a28-bac8-0fd11c7c37f6.png" width="79%">
 
