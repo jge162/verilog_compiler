@@ -80,3 +80,5 @@ Please report [issues](https://github.com/jge162/verilog_compiler/issues) here f
 ## License info:
   
 jge162/verilog_compiler is licensed under the [GNU General Public License v3.0](https://github.com/jge162/verilog_compiler/blob/main/LICENSE)
+
+Designed with 💙 by [@jermyiah™](https://gothub.com/jge162)
