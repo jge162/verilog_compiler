@@ -39,7 +39,7 @@
   "devDependencies": {
     "@types/uuid": "^10.0.0",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
-    "@typescript-eslint/parser": "^5.45.0",
+    "@typescript-eslint/parser": "^8.0.1",
     "@zeit/ncc": "^0.22.3",
     "eslint": "^9.0.0",
     "eslint-plugin-github": "^5.0.1",
