@@ -10,7 +10,7 @@ jobs:
       - name: Comment_on_pullrequest
         if: ${{ (github.event.pull_request.user.login != 'jge162') && !(github.actor != 'dependabot[bot]') }}
         # will not run for owner or dependabot
-        uses: mshick/add-pr-comment@v2
+        uses: mshick/add-pr-comment@v3
         with:
           message: |
             Thank you for the Pull request. The team will review when time permits. **Please allow 24 hours**
